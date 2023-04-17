@@ -1,0 +1,1 @@
+{"Collections":[{"sheetName":"Worksheet","startColumn":"A","endColumn":"N","startRow":"2","endRow":"604","comment":"","rule":"Individual: @B*\nTypes: Artist\nFacts: hasName @B*(xsd:string)","active":true}]}
