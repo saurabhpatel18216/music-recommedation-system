@@ -1,0 +1,122 @@
+{%extends "base.html" %}
+{%block content%}
+
+<div class="container d-flex justify-content-center align-items-center " >
+    <form action="/subscriber" method="POST">
+        <div class="row mt-3">
+            <div class="col ">
+                <input type="text" style="font-size: 14px;" class="form-control" placeholder="First name"
+                       name="First_Name" required>
+            </div>
+            <div class="col ">
+                <input type="text" style="font-size: 14px;" class="form-control" placeholder="Last name"
+                       name="Last_Name" required>
+            </div>
+        </div>
+        <span class="legend">Choose your gender </span>   
+        <fieldset id="setD">
+	    <input id="setD_male" type="radio" name="setD_gender">
+		<label  style="font-size: 14px;margin-top: 10px;" for="setD_male">Male</label>
+	    <input id="setD_female" type="radio" name="setD_gender">
+		<label  style="font-size: 14px;margin-top: 10px;" for="setD_female">Female</label>
+        </fieldset>
+        <label  style="font-size: 14px;margin-top: 10px;" class="form-label"> Who is your favourite Artist among given options</label>
+        <select class="form-select" style="font-size: 14px" aria-label="Default select example" name="Artist" required>
+            <option selected> Select an Artist</option>
+            <option value="Eminem"> Eminem	 </option>
+            <option value="Sia"> Sia	 </option>
+            <option value="LadyGaga"> Lady Gaga	 </option>
+            <option value="BrunoMars"> Bruno Mars	 </option>
+            <option value="JustinBieber"> Justin Bieber	 </option>
+            <option value="Coldplay"> Coldplay	 </option>
+            <option value="Rihanna"> Rihanna </option>
+            <option value="Maroon5"> Maroon 5 </option>
+            <option value="DuaLipa"> Dua Lipa</option>
+            <option value="Marshmello"> Marshmello </option>
+            <option value="AlanWalker"> Alan Walker </option>
+            <option value="SelenaGomez"> Selena Gomez </option>
+            <option value="SelenaGomez&TheScene"> Selena Gomez & The Scene </option>
+            <option value="Shakira"> Shakira </option>
+            <option value="Beyonce"> Beyonce </option>
+        </select>
+
+        <label  style="font-size: 14px;margin-top: 10px;" class="form-label"> Pick a Genre that you're intersted in</label>
+        <select class="form-select" style="font-size: 14px" aria-label="Default select example" name="Genre" required>
+            <option selected> Pick a Genre </option>
+            <option value="acousticPop"> acoustic pop	 </option>
+            <option value="alaskaIndie"> alaska indie </option>
+            <option value="alternativer&b"> alternative r&b </option>
+            <option value="artPop"> art pop	 </option>
+            <option value="altHipHop"> alt hip hop	 </option>
+            <option value="australianDance"> australian dance	 </option>
+            <option value="australianHipHop"> australian hip hop </option>
+            <option value="australianPop"> australian pop </option>
+            <option value="barbadianPop"> barbadian pop </option>
+            <option value="baroquePop"> baroque pop </option>
+            <option value="belgianEdm"> belgian edm </option>
+            <option value="bigRoom"> big room </option>
+            <option value="boyBand">boy band </option>
+            <option value="britishSoul"> british soul </option>
+            <option value="brostep"> brostep </option>
+            <option value="canadianContemporaryr&b"> canadian contemporary r&b </option>
+            <option value="canadianLatin"> canadian latin </option>
+            <option value="canadianPop"> canadian pop </option>
+            <option value="canadianHipHop"> canadian hip hop </option>
+            <option value="candyPop"> candy pop </option>
+            <option value="celticRock"> celtic rock</option>
+            <option value="chicagoRap">chicago rap</option>
+            <option value="colombianPop"> colombian pop </option>
+            <option value="complextro"> Virtual University </option>
+            <option value="contemporaryCountry"> complextro </option>
+            <option value="dance pop"> dance pop </option>
+            <option value="danishPop"> danish pop </option>
+            <option value="detroitPop"> detroit pop </option>
+            <option value="downtempo">downtempo </option>
+            <option value="edm"> edm </option>
+            <option value="electro"> electro </option>
+            <option value="electroHouse"> electro house </option>
+            <option value="electronicTrap"> electronic trap </option>
+            <option value="electroPop"> electro pop </option>
+            <option value="escapeRoom"> escape room </option>
+            <option value="folkPop"> folk pop </option>
+            <option value="frenchIndiePop"> french indie pop </option>
+            <option value="hipHop"> hip hop </option>
+            <option value="hipPop"> hip pop </option>
+            <option value="hollywood"> hollywood </option>
+            <option value="house"> house </option>
+            <option value="indiePop"> indie pop </option>
+            <option value="irishsinger-songwriter"> irish singer-songwriter </option>
+            <option value="latin"> latin </option>
+            <option value="metropopolis"> metropopolis </option>
+            <option value="moroccanPop"> moroccan pop </option>
+            <option value="neoMellow"> neo mellow </option>
+            <option value="permanentWave"> permanent wave </option>
+            <option value="pop"> pop </option>
+            <option value="tropicalHouse"> tropical house </option>
+        </select>
+        <div class="m-2 d-flex justify-content-end">
+            <button type="submit" class="btn btn-primary align-self-center" style="font-size: 0.75rem;font-weight: 20;">Save and move to preferences</button>
+        </div>
+        <div class="container" id="=">
+            <div class="row">
+              <div class="col-sm-12 col-md-6">
+                <h6>About</h6>
+                <p class="text-justify">The development of music recommendation systems using ontologies and web semantics has gained significant attention in recent years. By analyzing user preferences, behavior, and past listening habits, these systems suggest songs, albums, or artists to users that align with their individual preferences. In this project, we have designed a music recommendation system that recommends popular songs based on a chosen genre or artist using their popularity score. Our system is able to identify patterns and provide personalized recommendations that enhance the listening experience for music lovers.</p>
+              </div>
+        
+              <div class="col-xs-6 col-md-3">
+                <h6>Group Members</h6>
+                <ul class="footer-links">
+                  <li><a href="https://www.linkedin.com/in/anupam-sharma-134b45231/">Anupam Sharma</a></li>
+                  <li><a href="https://www.linkedin.com/in/debashish-a-chakraborty-49b7031b1/">Debashish A Chakraborty</a></li>
+                  <li><a href="https://www.linkedin.com/in/jyotirmay-singh-911185212/">Jyotirmay Singh</a></li>
+                  <li><a href="https://www.linkedin.com/in/saurabh-patel18216/">Saurabh Patel</a></li>
+                </ul>
+              </div>
+        </div>
+    </form>
+    
+{% endblock %}
+
+
+
